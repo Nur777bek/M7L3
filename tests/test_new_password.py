@@ -8,6 +8,10 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+def test_password_check():
+    assert generate_password() != generate_password()
+
+
 """
 Допиши еще один тест из предложенных. Или придумай свой.
 Если сможешь написать больше, то будет круто!
